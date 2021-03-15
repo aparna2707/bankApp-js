@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="bank.js"></script>
+    <style>
+        .main{
+            margin-top: 1%;
+        }
+        body{
+         background-image: url('bk.png'); 
+        background-repeat: no-repeat;
+        background-size: cover;
+           
+        
+        }
+    </style>
+</head>
+<body >
+    
+    <div class="container">
+        
+        <div class="row">
+            <div class="main">
+                <h1  class="text-center" style="color:darkblue"><strong>Welcome to SBM Bank</strong></h1>
+            <div class="mb-3">
+                <div class="form-group">
+                    <label for="" style="color:#e9d7d7"><strong>Username</strong></label>
+                    <input type="text" id="uname" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="" style="color:#e9d3d3"><strong>Password</strong></label>
+                    <input type="password" id="pwd" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="" style="color:#e2d8d8"><strong>Amount</strong></label>
+                    <input type="text" id="amt" class="form-control">
+                </div>
+          
+                <br>
+                <div class="col-md-12 ">
+                <button type="submit" onclick="Bank.deposit()" class="btn btn-primary ">Deposit</button>
+
+                 <button type="submit" onclick="Bank.withdraw()" class="btn btn-primary ">Withdrawal</button>
+            
+                </div>
+            </div>
+            </div>
+            </div>
+
+            
+        </div>
+    </div>
+</body>
+</html>
